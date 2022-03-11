@@ -1,0 +1,80 @@
+ 
+<---------importing 500 document to database-------->
+
+mongoimport --db movies --collection movie --file C:/Users/ADARSHA/Downloads/MOCK_DATA.json --jsonArray
+
+
+<-------all queries should only return movie_name and production_year--------->
+
+db.movie.find({},{movie_name:1,production_year:1,_id:0}).pretty()
+
+
+
+<---------------find all movies which are equal to movie_name--------------->
+
+db.movie.find({movie_name:{$eq:"Blue Valentine"}}).pretty() 
+
+
+
+<------------find all movies which are not equal to movie_name---------->
+
+db.movie.find({movie_name:{$ne:"Blue Valentine"}}).pretty() 
+db.movie.find({movie_name:{$not:{$eq:"Blue Valentine"}}}).pretty()   
+
+
+
+<--------------find all movies greater than and greater than equal to a budget------------>
+
+db.movie.find({budget:{$gt:"$14036"}}).pretty()
+db.movie.find({budget:{$gte:"$14036"}}).pretty()
+db.movie.find({$and:[{budget:{$gt:"$16000"}},{budget:{$gte:"$16000"}}]})
+
+
+<--------------find all movies less than and less than equal to a budget-------------->
+
+db.movie.find({budget:{$lt:"$14036"}}).pretty()
+db.movie.find({budget:{$lte:"$14036"}}).pretty()
+db.movie.find({$and:[{budget:{$lt:"$16000"}},{budget:{$lte:"$16000"}}]})
+
+
+<-----------find all movies that are produced after 2000 with budget greater than 10000------------>
+db.movie.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$10000"}}]}).pretty()
+
+
+<----------find all movies that are produced after 2000 or budget greater than 10000---------->
+db.movie.find({$or:[{production_year:{$gt:2000}},{budget:{$lt:"$10000"}}]}).pretty()
+
+
+<------------find all movies that are neither produced after 2000 nor with budget greater than 10000.------------->
+
+db.movie.find({$nor:[{production_year:{$gt:2000}},{budget:{$lt:"$10000"}}]}).pretty()
+
+
+
+<------------------find all movies that are not produced in 2000 or they do not have budget of 10000------------------>
+
+db.movie.find({$or:[{$and:[{production_year:{$lt:2000}},{production_year:{$gt:2000}}]},{budget:{$ne:"$10000"}}]}).pretty() 
+
+
+<--------------find all movies that were produced from 2000 to 2010--------------->
+
+db.movie.find({$and:[{production_year:{$gt:2000}},{production_year:{$lt:2010}}]}) 
+
+
+<----------------Sort all movies descending based on the production year and if the year is same then alphabetically for their movie_names---------------->
+
+db.movie.find({}).sort({production_year:-1},{movie_name:1}).limit(50).pretty() 
+
+
+
+<-----------------in query 10 skip the first 10 entries and fetch the next 5---------------->
+
+db.movie.find({}).skip(10).limit(5).pretty()
+
+
+
+<----------------Optional advanced question :- remove movie genre from the first 10 movies in query 10.----------------->
+
+db.movies.find({}).limit(10).forEach((elem)=>{db.movies.update({"_id":elem._id},{$unset:{id:1}})})
+
+
