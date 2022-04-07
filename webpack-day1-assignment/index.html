@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="./src/index.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div id="navbar-div">
+            
+        </div>
+        <div id="create-todo" onclick="displayForm()">
+            <img src="data:image/png;base64,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" alt="">
+            <div id="todo_form">
+                <input id="task" type="text" placeholder="write your task name here...">
+                <input id="date" type="date" placeholder="Select the date...">
+                <input id="time" type="time" placeholder="Select the time...">
+                <textarea id="task_details" name="details" id="" cols="30" rows="10" placeholder="write in Brief about your task..."></textarea>
+                <button  onclick="populateData()">Save</button>
+            </div>
+            </div>
+            
+            <div id="content"></div>
+        </div>  
+    </div>
+</body>
+</html>
+<script src="./build/bundle.js"></script>

@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+#root{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 900px;
+}
+#navbar-div{
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    width: 100%;
+    height:15%;
+    position: fixed;
+    background-color: rgb(253, 253, 253);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#logo{
+    /* border: 1px solid red; */
+    width: 115px;
+    height: 80%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#logo img{
+    height: 170px;
+    width: 250px;
+    position: relative;
+    top: -35px;
+    left: -66px;
+}
+#create-todo{
+    border: 3px solid royalblue;
+    border-radius: 50%;
+    /* margin: 4% 90%; */
+    position: fixed;
+    right: 250px;
+    top: 220px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+#create-todo img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#todo_form{
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    right: 80px;
+    top: 195px;
+    /* border: 1px solid black; */
+    background-color: azure;
+    border-radius: 15px;
+    display: none;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#todo_form input,textarea{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+textarea{
+    min-height: 200px;
+}
+button{
+    border: 1px solid rgb(246, 202, 121);
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+#content{
+    /* border: 1px solid black; */
+    
+    border-radius: 20px;
+    max-width:70%;
+    margin: 3%;
+    margin-top: 200px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.todo_content{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.todo_content:hover{
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+.remove{
+    /* border: 1px solid black; */
+    padding: 3px 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgb(226, 43, 43);
+    color: white;
+    right: 0%;
+    top: -1%;
+    font-size: 90%;
+    font-weight: lighter;
+    cursor: pointer;
+}
