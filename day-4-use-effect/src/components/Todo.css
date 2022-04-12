@@ -1,0 +1,33 @@
+#input{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+#todos-div{
+    margin-top: 20px;
+    border: 10px solid rgb(245, 245, 245);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: darkgray;
+    min-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#todos-div button{
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid rgb(243, 196, 108);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-size: 170%;
+    color: rgb(2, 210, 2);
+    background-color: wheat;
+}

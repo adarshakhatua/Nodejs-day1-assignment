@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: rgb(207, 207, 207);
+  min-height: 1000px;
+}
+#navbar{
+  /* border: 1px solid black; */
+  width: 55%;
+  height: 120px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
+  font-weight: 700;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+#content{
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  margin:50px auto;
+  padding:50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
