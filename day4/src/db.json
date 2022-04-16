@@ -1,0 +1,54 @@
+{
+  "todos": [
+    {
+      "title": "play football",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "walk outside",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "read news paper",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "learn react",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "learn css",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "learn java",
+      "status": true,
+      "id": 6
+    },
+    {
+      "title": "learn java",
+      "status": true,
+      "id": 7
+    },
+    {
+      "title": "drink water",
+      "status": true,
+      "id": 8
+    },
+    {
+      "title": "have breakfast",
+      "status": true,
+      "id": 9
+    },
+    {
+      "title": "have lunch",
+      "status": true,
+      "id": 10
+    }
+  ]
+}
