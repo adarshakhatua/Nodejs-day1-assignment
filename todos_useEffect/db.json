@@ -1,0 +1,41 @@
+{
+  "todos": [
+    {
+      "title": "bread",
+      "select": true,
+      "fav": true,
+      "id": 1
+    },
+    {
+      "title": "milk",
+      "select": false,
+      "fav": true,
+      "id": 4
+    },
+    {
+      "title": "atta",
+      "select": false,
+      "fav": false,
+      "id": 6
+    },
+    {
+      "title": "Burger",
+      "select": true,
+      "fav": false,
+      "id": 7
+    },
+    {
+      "title": "Sugar",
+      "select": false,
+      "fav": false,
+      "id": 8
+    },
+    {
+      "title": "biskits",
+      "select": true,
+      "fav": false,
+      "id": 9
+    }
+  ],
+  "done": []
+}
