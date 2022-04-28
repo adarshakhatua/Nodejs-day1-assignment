@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEEEE;
+}
+
+nav {
+    /* border: 1px solid black; */
+    height: 150px;
+    background-color: #06113C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 30px solid #ffffff;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 600px;
+    border-right: 80px solid #000000;
+    border-left: 40px solid #000000;
+}
+
+#content {
+    /* border: 1px solid rgb(234, 234, 234); */
+    min-height: 600px;
+    margin: 50px auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#inputDiv {
+    /* border: 1px solid black; */
+    height: 100px;
+    border-radius: 5px;
+    margin: 10px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+#addBtn {
+    border: 1px solid #D9D7F1;
+    background-color: #D9D7F1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    height: 35%;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1px solid transparent;
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+
+#showTodos {
+    /* border: 1px solid black; */
+    min-height: 450px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+.showTodosSingle {
+    /* border: 1px solid blue; */
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    margin: 20px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.txtContent {
+    /* border: 1px solid red; */
+    height: 90%;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.markBtn {
+    border: 1px solid rgb(177, 177, 177);
+    background-color: #D9D7F1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    height: 35%;
+    width: 12%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 199, 3);
+}
+
+.removeBtn {
+    border: 1px solid rgb(177, 177, 177);
+    background-color: #D9D7F1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    height: 35%;
+    width: 12%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    font-size: 70%;
+}
+h1{
+    font-size: 300%;
+}
