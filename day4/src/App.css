@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+/* border: 1px solid black; */
+
+}
+#nav{
+  /* border:1px solid black; */
+  border-radius: 15px;
+  height:90px;
+  width:50%;
+  position: fixed;
+  top:0px;
+  left:24%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: white;
+  font-size: 400%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  word-spacing: 10px;
+}
+#todos{
+  /* border: 1px solid black; */
+  height:700px;
+  padding-top: 150px;
+}
+span{
+  font-size: 65%;
+}
+#pagination{
+  /* border:1px solid black; */
+  width:400px;
+  height:70px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#pagination button{
+  width:100px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 150%;
+  color: rgb(0, 114, 185);
+  border: 1px solid rgb(190, 190, 190);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}

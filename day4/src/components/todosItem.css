@@ -1,0 +1,21 @@
+#sigle{
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 450px;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#sigle button{
+    width:80px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgb(218, 218, 218);
+    font-size: 110%;
+    color: rgb(3, 201, 3);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
